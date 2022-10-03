@@ -1,0 +1,20 @@
+class Solution {
+    public int[] shuffle(int[] nums, int n) {
+        
+  
+        int [] result= new int[nums.length];
+        int k=0;
+        int temp=0;
+        for(int i=0;i<(nums.length)/2;i++)
+        {
+            
+            result[k]=nums[i];
+            result[k+1]=nums[n+temp];
+          
+          k=k+2;
+          temp++;    
+          }
+        
+        return(result);
+    }
+}
